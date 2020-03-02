@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
             ['product_id' => 9, 'user_id' => $user1->id, 'quantity' => 1]
         ];
 
-        \App\UserProducts::insert($products_1);
+        \App\UserProduct::insert($products_1);
 
         $user2 = User::create([
             'name' => 'Monica Ramirez',
@@ -50,7 +50,7 @@ class UsersTableSeeder extends Seeder
             ['product_id' => 7, 'user_id' => $user2->id, 'quantity' => 1]
         ];
 
-        \App\UserProducts::insert($products_2);
+        \App\UserProduct::insert($products_2);
 
         $user3 = User::create([
             'name' => 'John Smith',
@@ -70,7 +70,7 @@ class UsersTableSeeder extends Seeder
             ['product_id' => 7, 'user_id' => $user3->id, 'quantity' => 1]
         ];
 
-        \App\UserProducts::insert($products_3);
+        \App\UserProduct::insert($products_3);
 
         $user4 = User::create([
             'name' => 'Carlos Merino',
@@ -90,7 +90,7 @@ class UsersTableSeeder extends Seeder
             ['product_id' => 1, 'user_id' => $user4->id, 'quantity' => 1]
         ];
 
-        \App\UserProducts::insert($products_4);
+        \App\UserProduct::insert($products_4);
 
         $user5 = User::create([
             'name' => 'Lisa Smith',
@@ -110,7 +110,7 @@ class UsersTableSeeder extends Seeder
             ['product_id' => 12, 'user_id' => $user5->id, 'quantity' => 1]
         ];
 
-        \App\UserProducts::insert($products_5);
+        \App\UserProduct::insert($products_5);
 
     }
 }

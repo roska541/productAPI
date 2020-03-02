@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\UserProducts;
+use App\UserProduct;
 use App\User;
 use Illuminate\Http\Request;
 
-class UserProductsController extends Controller
+class UserProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +42,10 @@ class UserProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\UserProducts  $userProducts
+     * @param  \App\UserProduct  $userProducts
      * @return \Illuminate\Http\Response
      */
-    public function show(UserProducts $userProducts, $id)
+    public function show(UserProduct $userProducts, $id)
     {
         try{
             $user = User::findOrFail($id);
@@ -64,10 +64,10 @@ class UserProductsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\UserProducts  $userProducts
+     * @param  \App\UserProduct  $userProducts
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserProducts $userProducts)
+    public function edit(UserProduct $userProducts)
     {
         //
     }
@@ -76,10 +76,10 @@ class UserProductsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\UserProducts  $userProducts
+     * @param  \App\UserProduct  $userProducts
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, UserProducts $userProducts)
+    public function update(Request $request, UserProduct $userProducts)
     {
         //
     }
@@ -87,10 +87,10 @@ class UserProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\UserProducts  $userProducts
+     * @param  \App\UserProduct  $userProducts
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserProducts $userProducts)
+    public function destroy(UserProduct $userProducts)
     {
         //
     }

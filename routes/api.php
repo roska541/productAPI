@@ -17,10 +17,10 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::resource('products', 'ProductsController');
+Route::resource('products', 'ProductController');
 
 //Route::resource('users', 'UserController'); For User Management
 
-Route::resource('user_products', 'UserProductsController');
+Route::resource('user_products', 'UserProductController');
 
 

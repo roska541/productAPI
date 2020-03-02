@@ -28,6 +28,6 @@ class ProductsTableSeeder extends Seeder
             ['name'=> 'Women Skirt', 'size' => 'large', 'color' => 'black', 'brand' => 'HM']
         ];
 
-        \App\Products::insert($prodcuts);
+        \App\Product::insert($prodcuts);
     }
 }
